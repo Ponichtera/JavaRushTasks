@@ -29,50 +29,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Room.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Room.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/3.JavaMultithreading/src/com/javarush/task/task23/task2312/Room.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="156" column="7" lean-forward="true" selection-start-line="156" selection-start-column="7" selection-end-line="156" selection-end-column="7" />
+            <state relative-caret-position="-239">
+              <caret line="133" column="7" lean-forward="false" selection-start-line="133" selection-start-column="7" selection-end-line="133" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#497#498#0" expanded="true" />
-                <element signature="e#525#526#0" expanded="true" />
-                <element signature="e#556#557#0" expanded="true" />
-                <element signature="e#584#585#0" expanded="true" />
-                <element signature="e#613#614#0" expanded="true" />
-                <element signature="e#641#642#0" expanded="true" />
-                <element signature="e#671#672#0" expanded="true" />
-                <element signature="e#700#701#0" expanded="true" />
-                <element signature="e#739#740#0" expanded="true" />
-                <element signature="e#773#774#0" expanded="true" />
-                <element signature="e#814#815#0" expanded="true" />
-                <element signature="e#850#851#0" expanded="true" />
-                <element signature="e#891#892#0" expanded="true" />
-                <element signature="e#925#926#0" expanded="true" />
-                <element signature="e#966#967#0" expanded="true" />
-                <element signature="e#1000#1001#0" expanded="true" />
-                <element signature="e#3551#3552#0" expanded="true" />
-                <element signature="e#3580#3581#0" expanded="true" />
+                <element signature="e#2942#2956#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Условие.jrtc" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/3.JavaMultithreading/src/com/javarush/task/task23/task2312/Условие.jrtc">
-          <provider selected="true" editor-type-id="EditorTypeId">
-            <state />
+      <file leaf-file-name="Snake.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/3.JavaMultithreading/src/com/javarush/task/task23/task2312/Snake.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="203">
+              <caret line="56" column="50" lean-forward="false" selection-start-line="56" selection-start-column="50" selection-end-line="56" selection-end-column="50" />
+              <folding>
+                <element signature="e#1919#1920#0" expanded="true" />
+                <element signature="e#1979#1980#0" expanded="true" />
+              </folding>
+            </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Snake.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/3.JavaMultithreading/src/com/javarush/task/task23/task2312/Snake.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="382">
-              <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-              <folding />
-            </state>
+      <file leaf-file-name="Валидация" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Temp/Валидация">
+          <provider selected="true" editor-type-id="EditorTypeId">
+            <state />
           </provider>
         </entry>
       </file>
@@ -160,11 +146,11 @@
         <option value="$PROJECT_DIR$/3.JavaMultithreading/src/com/javarush/task/task21/task2113/Horse.java" />
         <option value="$PROJECT_DIR$/3.JavaMultithreading/src/com/javarush/task/task21/task2113/Hippodrome.java" />
         <option value="$PROJECT_DIR$/3.JavaMultithreading/src/com/javarush/task/task23/task2312/SnakeDirection.java" />
-        <option value="$PROJECT_DIR$/3.JavaMultithreading/src/com/javarush/task/task23/task2312/SnakeSection.java" />
         <option value="$PROJECT_DIR$/3.JavaMultithreading/src/com/javarush/task/task23/task2312/Mouse.java" />
-        <option value="$PROJECT_DIR$/3.JavaMultithreading/src/com/javarush/task/task23/task2312/Snake.java" />
         <option value="$PROJECT_DIR$/3.JavaMultithreading/src/com/javarush/task/task23/task2312/Условие.jrtc" />
         <option value="$PROJECT_DIR$/3.JavaMultithreading/src/com/javarush/task/task23/task2312/Room.java" />
+        <option value="$PROJECT_DIR$/3.JavaMultithreading/src/com/javarush/task/task23/task2312/SnakeSection.java" />
+        <option value="$PROJECT_DIR$/3.JavaMultithreading/src/com/javarush/task/task23/task2312/Snake.java" />
       </list>
     </option>
   </component>
@@ -1275,13 +1261,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/2.JavaCore/src/com/javarush/task/task19/task1921/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/2.JavaCore/src/com/javarush/task/task19/task1922/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -1409,11 +1388,6 @@
         <state relative-caret-position="204">
           <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Компиляция">
-      <provider selected="true" editor-type-id="EditorTypeId">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/2.JavaCore/src/com/javarush/task/task20/task2014/Solution.java">
@@ -1593,14 +1567,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/3.JavaMultithreading/src/com/javarush/task/task23/task2312/SnakeSection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="23" lean-forward="false" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/3.JavaMultithreading/src/com/javarush/task/task23/task2312/Mouse.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -1617,9 +1583,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Валидация">
-      <provider selected="true" editor-type-id="EditorTypeId">
-        <state />
+    <entry file="file://$PROJECT_DIR$/3.JavaMultithreading/src/com/javarush/task/task23/task2312/SnakeSection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding>
+            <element signature="e#337#338#0" expanded="true" />
+            <element signature="e#370#371#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="144" column="12" lean-forward="false" selection-start-line="144" selection-start-column="12" selection-end-line="144" selection-end-column="12" />
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/3.JavaMultithreading/src/com/javarush/task/task23/task2312/Условие.jrtc">
@@ -1627,38 +1607,34 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/3.JavaMultithreading/src/com/javarush/task/task23/task2312/Snake.java">
+    <entry file="file://$PROJECT_DIR$/3.JavaMultithreading/src/com/javarush/task/task23/task2312/Room.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="-239">
+          <caret line="133" column="7" lean-forward="false" selection-start-line="133" selection-start-column="7" selection-end-line="133" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2942#2956#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/3.JavaMultithreading/src/com/javarush/task/task23/task2312/Room.java">
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Компиляция">
+      <provider selected="true" editor-type-id="EditorTypeId">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Валидация">
+      <provider selected="true" editor-type-id="EditorTypeId">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3.JavaMultithreading/src/com/javarush/task/task23/task2312/Snake.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="156" column="7" lean-forward="true" selection-start-line="156" selection-start-column="7" selection-end-line="156" selection-end-column="7" />
+        <state relative-caret-position="203">
+          <caret line="56" column="50" lean-forward="false" selection-start-line="56" selection-start-column="50" selection-end-line="56" selection-end-column="50" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#497#498#0" expanded="true" />
-            <element signature="e#525#526#0" expanded="true" />
-            <element signature="e#556#557#0" expanded="true" />
-            <element signature="e#584#585#0" expanded="true" />
-            <element signature="e#613#614#0" expanded="true" />
-            <element signature="e#641#642#0" expanded="true" />
-            <element signature="e#671#672#0" expanded="true" />
-            <element signature="e#700#701#0" expanded="true" />
-            <element signature="e#739#740#0" expanded="true" />
-            <element signature="e#773#774#0" expanded="true" />
-            <element signature="e#814#815#0" expanded="true" />
-            <element signature="e#850#851#0" expanded="true" />
-            <element signature="e#891#892#0" expanded="true" />
-            <element signature="e#925#926#0" expanded="true" />
-            <element signature="e#966#967#0" expanded="true" />
-            <element signature="e#1000#1001#0" expanded="true" />
-            <element signature="e#3551#3552#0" expanded="true" />
-            <element signature="e#3580#3581#0" expanded="true" />
+            <element signature="e#1919#1920#0" expanded="true" />
+            <element signature="e#1979#1980#0" expanded="true" />
           </folding>
         </state>
       </provider>

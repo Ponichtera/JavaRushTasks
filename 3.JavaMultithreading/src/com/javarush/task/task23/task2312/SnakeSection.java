@@ -17,4 +17,21 @@ public class SnakeSection {
     public int getY() {
         return y;
     }
+
+    @Override
+    public int hashCode() {
+       return  31 * x + y;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == this) return true;
+        if (obj == null) return false;
+        if (!(obj instanceof SnakeSection)) return false;
+        SnakeSection snakeSection = (SnakeSection) obj;
+        if (snakeSection.x != ((SnakeSection) obj).x) return false;
+        if (snakeSection.y != ((SnakeSection) obj).y) return false;
+        return true;
+    }
+
 }

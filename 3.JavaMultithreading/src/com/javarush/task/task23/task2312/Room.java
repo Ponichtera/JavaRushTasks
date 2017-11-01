@@ -1,13 +1,11 @@
 package com.javarush.task.task23.task2312;
 
 
-import sun.swing.SwingUtilities2;
-
 import java.awt.event.KeyEvent;
 import java.util.ArrayList;
 
 /**
- * The main class of the program.
+ * Основной класс программы.
  */
 public class Room {
     private int width;
@@ -55,86 +53,86 @@ public class Room {
     }
 
     /**
-     * The main program cycle.
-     * All important actions take place here
+     * Основной цикл программы.
+     * Тут происходят все важные действия
      */
     public void run() {
-        // Create the object "the observer for the keyboard" and start it.
+        //Создаем объект "наблюдатель за клавиатурой" и стартуем его.
         KeyboardObserver keyboardObserver = new KeyboardObserver();
         keyboardObserver.start();
 
-
+        //пока змея жива
         while (snake.isAlive()) {
+            //"наблюдатель" содержит события о нажатии клавиш?
             if (keyboardObserver.hasKeyEvents()) {
                 KeyEvent event = keyboardObserver.getEventFromTop();
-                // If equal to the character 'q' - exit the game.
+                //Если равно символу 'q' - выйти из игры.
                 if (event.getKeyChar() == 'q') return;
 
+                //Если "стрелка влево" - сдвинуть фигурку влево
                 if (event.getKeyCode() == KeyEvent.VK_LEFT)
                     snake.setDirection(SnakeDirection.LEFT);
+                    //Если "стрелка вправо" - сдвинуть фигурку вправо
                 else if (event.getKeyCode() == KeyEvent.VK_RIGHT)
                     snake.setDirection(SnakeDirection.RIGHT);
+                    //Если "стрелка вверх" - сдвинуть фигурку вверх
                 else if (event.getKeyCode() == KeyEvent.VK_UP)
                     snake.setDirection(SnakeDirection.UP);
+                    //Если "стрелка вниз" - сдвинуть фигурку вниз
                 else if (event.getKeyCode() == KeyEvent.VK_DOWN)
                     snake.setDirection(SnakeDirection.DOWN);
             }
 
-            snake.move();
-            print();
-            sleep();
+            snake.move();   //двигаем змею
+            print();        //отображаем текущее состояние игры
+            sleep();        //пауза между ходами
         }
 
+        //Выводим сообщение "Game Over"
         System.out.println("Game Over!");
     }
 
     /**
-     * Display the current state of the game
+     * Выводим на экран текущее состояние игры
      */
     public void print() {
-        // Create an array where we will "draw" the current state of the game
+        //Создаем массив, куда будем "рисовать" текущее состояние игры
         int[][] matrix = new int[height][width];
 
-        // Draw all the pieces of the snake
-        ArrayList<SnakeSection> sections = new ArrayList<>(snake.getSections());
-        for (SnakeSection section : sections)
-            matrix[section.getY()][section.getX()] = 1;
-        matrix[snake.getY()][snake.getX()] = 2;
+        //Рисуем все кусочки змеи
+        ArrayList<SnakeSection> sections = new ArrayList<SnakeSection>(snake.getSections());
+        for (SnakeSection snakeSection : sections) {
+            matrix[snakeSection.getY()][snakeSection.getX()] = 1;
+        }
 
-        // Draw the mouse
-        matrix[getMouse().getY()][getMouse().getX()] = 3;
-        // Display all this on the screen
-        for (int[] array2 : matrix)
-        {
-            for (int value : array2) {
-                switch (value) {
-                    case 0:
-                        System.out.print(".");
-                        break;
-                    case 1:
-                        System.out.print("x");
-                        break;
-                    case 2:
-                        System.out.print("X");
-                        break;
-                    case 3:
-                        System.out.print("^");
-                        break;
-                }
+        //Рисуем голову змеи (4 - если змея мертвая)
+        matrix[snake.getY()][snake.getX()] = snake.isAlive() ? 2 : 4;
+
+        //Рисуем мышь
+        matrix[mouse.getY()][mouse.getX()] = 3;
+
+        //Выводим все это на экран
+        String[] symbols = {" . ", " x ", " X ", "^_^", "RIP"};
+        for (int y = 0; y < height; y++) {
+            for (int x = 0; x < width; x++) {
+                System.out.print(symbols[matrix[y][x]]);
             }
             System.out.println();
         }
+        System.out.println();
+        System.out.println();
+        System.out.println();
     }
 
     /**
-     * The method is called when the mouse is eaten
+     * Метод вызывается, когда мышь съели
      */
     public void eatMouse() {
         createMouse();
     }
 
     /**
-     * Creates a new mouse
+     * Создает новую мышь
      */
     public void createMouse() {
         int x = (int) (Math.random() * width);
@@ -154,13 +152,18 @@ public class Room {
     }
 
 
+    private int initialDelay = 520;
+    private int delayStep = 20;
+
     /**
-     * The program pauses, the length of which depends on the length of the snake.
+     * Программа делает паузу, длинна которой зависит от длинны змеи.
      */
     public void sleep() {
-      try {
-          if (game.snake.getSections().size() < 16 ) Thread.sleep(500 - (20 * (game.snake.getSections().size()-1)));
-          else Thread.sleep(200);
-      } catch (InterruptedException e) {e.printStackTrace();}
+        try {
+            int level = snake.getSections().size();
+            int delay = level < 15 ? (initialDelay - delayStep * level) : 200;
+            Thread.sleep(delay);
+        } catch (InterruptedException e) {
+        }
     }
 }
