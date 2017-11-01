@@ -1,7 +1,10 @@
 package com.javarush.task.task23.task2312;
 
 
+import sun.swing.SwingUtilities2;
+
 import java.awt.event.KeyEvent;
+import java.util.ArrayList;
 
 /**
  * The main class of the program.
@@ -90,9 +93,37 @@ public class Room {
      */
     public void print() {
         // Create an array where we will "draw" the current state of the game
+        int[][] matrix = new int[height][width];
+
         // Draw all the pieces of the snake
+        ArrayList<SnakeSection> sections = new ArrayList<>(snake.getSections());
+        for (SnakeSection section : sections)
+            matrix[section.getY()][section.getX()] = 1;
+        matrix[snake.getY()][snake.getX()] = 2;
+
         // Draw the mouse
+        matrix[getMouse().getY()][getMouse().getX()] = 3;
         // Display all this on the screen
+        for (int[] array2 : matrix)
+        {
+            for (int value : array2) {
+                switch (value) {
+                    case 0:
+                        System.out.print(".");
+                        break;
+                    case 1:
+                        System.out.print("x");
+                        break;
+                    case 2:
+                        System.out.print("X");
+                        break;
+                    case 3:
+                        System.out.print("^");
+                        break;
+                }
+            }
+            System.out.println();
+        }
     }
 
     /**

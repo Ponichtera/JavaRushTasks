@@ -39,5 +39,15 @@ public class Snake {
         return sections.get(0).getY();
     }
 
-    public void move() {}
+    public void move() {
+        if (!isAlive) return;
+        if(direction == SnakeDirection.UP) move(0,-1);
+        if(direction == SnakeDirection.RIGHT) move(1,0);
+        if(direction == SnakeDirection.LEFT) move(-1,0);
+        if(direction == SnakeDirection.DOWN) move(0,1);
+
+    }
+    public void move(int x, int y) {
+
+    }
 }
