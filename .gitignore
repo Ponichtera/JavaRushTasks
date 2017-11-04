@@ -1,3 +1,15 @@
 
 JavaRushPlugin.properties
 JavaRushPlugin.properties
+11txt
+*.properties
+JavaRushTasks.iml
+lib/kotlin-reflect.jar
+lib/kotlin-stdlib-jre7-sources.jar
+lib/kotlin-stdlib-jre7.jar
+lib/kotlin-stdlib-jre8-sources.jar
+lib/kotlin-stdlib-jre8.jar
+lib/kotlin-stdlib-sources.jar
+lib/kotlin-stdlib.jar
+lib/kotlin-test.jar
+Инструкция.png
