@@ -14,6 +14,10 @@ public class Arkanoid {
     public void move() {}
     public void run() {}
 
+    public Arkanoid(int width, int height) {
+        this.width = width;
+        this.height = height;
+    }
     public Ball getBall() {
         return ball;
     }
@@ -36,11 +40,6 @@ public class Arkanoid {
 
     public void setBricks(List<Brick> bricks) {
         this.bricks = bricks;
-    }
-
-    public Arkanoid(int width, int height) {
-        this.width = width;
-        this.height = height;
     }
 
     public int getWidth() {

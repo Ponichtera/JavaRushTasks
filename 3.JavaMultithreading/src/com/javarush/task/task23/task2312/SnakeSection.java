@@ -1,7 +1,9 @@
 package com.javarush.task.task23.task2312;
 
 public class SnakeSection {
-    private int x,y;
+    private int x;
+    private int y;
+
 
     public SnakeSection(int x, int y) {
         this.x = x;
@@ -12,15 +14,24 @@ public class SnakeSection {
         return x;
     }
 
-    public void setX(int x) {
-        this.x = x;
-    }
-
     public int getY() {
         return y;
     }
 
-    public void setY(int y) {
-        this.y = y;
+    @Override
+    public int hashCode() {
+       return  31 * x + y;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+       /* if (obj == this) return true;
+        if (obj == null) return false;
+        if (!(obj instanceof SnakeSection)) return false;*/
+        SnakeSection snakeSection = (SnakeSection) obj;
+        if (getX() != snakeSection.getX()) return false;
+
+        return getY() == snakeSection.getY();
+    }
+
 }
