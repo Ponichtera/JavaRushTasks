@@ -5,6 +5,9 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/src/com/javarush/task/task22/task2212" />
+      <excludeFolder url="file://$MODULE_DIR$/src/com/javarush/task/task23/task2304" />
+      <excludeFolder url="file://$MODULE_DIR$/src/com/javarush/task/task23/task2312" />
+      <excludeFolder url="file://$MODULE_DIR$/src/com/javarush/task/task25/task2503" />
     </content>
     <content url="file://$MODULE_DIR$/src/com/javarush/task/task22/task2201" />
     <orderEntry type="inheritedJdk" />
