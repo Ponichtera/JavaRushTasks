@@ -1,4 +1,4 @@
-
+﻿.idea
 JavaRushPlugin.properties
 JavaRushPlugin.properties
 11txt
@@ -13,3 +13,4 @@ lib/kotlin-stdlib-sources.jar
 lib/kotlin-stdlib.jar
 lib/kotlin-test.jar
 Инструкция.png
+out
